@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+<div class="row">
+  <div class="col-sm-8">
+    <div class="jumbotron">
+      <h1>Register</h1>
+    </div> 
+  </div>
+
+  <div class="col-sm-4">
+    <form action="/register" method="POST">
+      
+<!-- Email -->
+  <label for="username">username:</label>
+  <input 
+    type="text" 
+    id="username" 
+    name="username" 
+    placeholder="Voer je naam in" 
+    required 
+  />
+  
+  <!-- Wachtwoord -->
+  <label for="password">Wachtwoord:</label>
+  <input 
+    type="password" 
+    id="password" 
+    name="password" 
+    placeholder="Voer je wachtwoord in" 
+    required 
+    autocomplete="current-password"
+  />
+  
+  <!-- Submit -->
+  <button type="submit">Register</button>
+</form>
+  </div>
+</div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
